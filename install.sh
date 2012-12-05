@@ -1,7 +1,13 @@
+#!/bin/bash
+echo
+echo "-----------------------"
+echo "--> c3netmon installer "
+echo "-----------------------"
+echo
 cd backend
 npm install memcache
 cd ../frontend
-npm install memcache
+npm install express@2.5.4
 npm install socket.io-client
 npm install socket.io
 npm install express
@@ -14,7 +20,7 @@ mv mbostock-d3-b22dd72 d3
 rm d3.zip
 mkdir jquery-ui
 cd jquery-ui
-wget http://jqueryui.com/download/jquery-ui-1.8.18.custom.zip -O jqueryui.zip
+wget http://sellf.googlecode.com/svn-history/r284/trunk/tatu/jquery/jquery-ui-1.8.18.custom.zip -O jqueryui.zip
 unzip jqueryui.zip
 rm index.html
 rm jqueryui.zip
